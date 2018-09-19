@@ -15,6 +15,9 @@ class App extends Component {
     return (
       <div>
         <h1>Starwars Character</h1>
+          <div>
+            {this.props.isFetching ? "Loading..." : ""}
+          </div>
           <ul>
             {this.props.starWarsChar.map(char => {
               console.log(char)
